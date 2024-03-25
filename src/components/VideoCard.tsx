@@ -1,6 +1,7 @@
-export function VideoCard (props : any) {
+
+export function VideoCard (props : any) {    
     return <div className="p-2 cursor-pointer">
-        <img src={props.thumbnail} className="border white rounded-xl"/>
+        <img src={props.thumbnail} className="border white rounded-xl" onClick={goToLink}/>
         <div className="grid grid-cols-12 pt-2">
             <div className="col-span-1">
                 <img src={props.image} className="w-12 rounded-full" />
@@ -20,3 +21,6 @@ export function VideoCard (props : any) {
     </div>
 }
 
+function goToLink() {
+    window.location.href = "https://www.youtube.com/shorts/SXHMnicI6Pg"
+}
