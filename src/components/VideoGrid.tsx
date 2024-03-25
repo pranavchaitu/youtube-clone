@@ -66,7 +66,7 @@ export function VideoGrid() {
             thumbnail={v.thumbnail}
             author={v.author}
             views={v.views}
-            time={v.views}
+            time={v.time}
         />)}
     </div>
 }
